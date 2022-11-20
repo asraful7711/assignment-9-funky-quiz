@@ -1,0 +1,4 @@
+.footer-hover a:hover {
+    color: rgb(153, 213, 213);
+    transition: ease-out;
+}
