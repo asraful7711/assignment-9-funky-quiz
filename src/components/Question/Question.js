@@ -7,8 +7,7 @@ const Question = ({ problems }) => {
     const { question, options, correctAnswer, } = problems;
     // console.log(problems)
     const checkAnswer = (selected) => {
-        const correctAns = correctAnswer;
-        if (selected === correctAns) {
+        if (selected === correctAnswer) {
             toast.success('Your answer is correct')
         } else {
             toast.error('Your answer is wrong')
@@ -22,7 +21,7 @@ const Question = ({ problems }) => {
                 <button onClick={() => handleCorrect(correctAnswer)}>
                     <EyeIcon className="h-6 w-6 hover:text-blue-500" />
                 </button>
-                <ToastContainer autoClose={400} />
+                <ToastContainer autoClose={600} />
             </div>
             <div className="grid lg:grid-cols-2 gap-5 text-left">
                 {
