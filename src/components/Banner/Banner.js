@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Banner = () => {
     return (
         <div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
@@ -33,19 +35,19 @@ export const Banner = () => {
                         This tutorial will show you how you can pull up yourself into a new window.make yourself better in codding
                     </p>
                     <div className="flex items-center">
-                        <a
-                            href="/"
+                        <Link
+                            to="/not"
                             className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-cyan-400 hover:bg-cyan-500 focus:shadow-outline focus:outline-none"
                         >
                             Get started
-                        </a>
-                        <a
-                            href="/"
+                        </Link>
+                        <Link
+                            to="/not"
                             aria-label=""
                             className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
                         >
                             Learn more
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

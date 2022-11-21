@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Topic = ({ topic }) => {
     const { id, logo, name, total } = topic;
