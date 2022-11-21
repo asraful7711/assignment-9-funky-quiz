@@ -5,7 +5,7 @@ import { Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 const Statistic = () => {
     const stats = useLoaderData();
     const statisticData = stats.data
-    console.log(statisticData)
+    // console.log(statisticData)
     return (
         <div className='flex justify-center items-center my-40 mx-10'>
 

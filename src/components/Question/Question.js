@@ -21,8 +21,8 @@ const Question = ({ problems }) => {
                 <p className='font-bold text-xl mb-4 mr-3'>{question}</p>
                 <button onClick={() => handleCorrect(correctAnswer)}>
                     <EyeIcon className="h-6 w-6 hover:text-blue-500" />
-                    <ToastContainer></ToastContainer>
                 </button>
+                <ToastContainer autoClose={400} />
             </div>
             <div className="grid lg:grid-cols-2 gap-5 text-left">
                 {
