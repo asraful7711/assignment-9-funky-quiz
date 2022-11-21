@@ -4,6 +4,7 @@ import Blog from './components/Blog/Blog';
 import ErrorRoute from './components/ErrorRoute/ErrorRoute';
 import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
+import Statistic from './components/Statistic/Statistic';
 import Topics from './components/Topics/Topics';
 import Main from './layouts/Main';
 
@@ -25,6 +26,11 @@ function App() {
         {
           path: '/blog',
           element: <Blog></Blog>
+        },
+        {
+          path: '/statistic',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+          element: <Statistic></Statistic>
         }
       ]
 
